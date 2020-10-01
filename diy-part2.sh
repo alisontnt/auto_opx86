@@ -12,7 +12,3 @@
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/luci-app-adguardhome
 # Modify default IP
 sed -i 's/192.168.1.1/10.7.30.1/g' package/base-files/files/bin/config_generate
-#Update Golang to 1.15.2
-sed -i "/GO_VERSION_MAJOR_MINOR:=/c GO_VERSION_MAJOR_MINOR:=1.15" feeds/packages/lang/golang/golang/Makefile
-sed -i "/GO_VERSION_PATCH:=/c GO_VERSION_PATCH:=2" feeds/packages/lang/golang/golang/Makefile
-sed -i "/PKG_HASH:=/c PKG_HASH:=28bf9d0bcde251011caae230a4a05d917b172ea203f2a62f2c2f9533589d4b4d" feeds/packages/lang/golang/golang/Makefile
